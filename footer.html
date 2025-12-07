@@ -1,0 +1,73 @@
+<!-- footer.html -->
+<footer class="site-footer">
+  <div class="footer-top container">
+    <!-- Left: Newsletter -->
+    <div class="footer-col footer-news">
+      <h4 class="ft-title">Join 5K+ Readers</h4>
+      <p class="ft-sub">Get 1 actionable AI tip every Saturday. All in under 4 minutes.</p>
+
+      <form class="newsletter-form" action="#" method="post" aria-label="Subscribe to newsletter">
+        <label for="ft-email" class="sr-only">Email</label>
+        <div class="input-wrap">
+          <input id="ft-email" name="email" type="email" placeholder="Your Email" required>
+          <button class="ft-btn" type="submit" aria-label="Subscribe">
+            <!-- arrow icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Middle columns: Navigation -->
+    <div class="footer-col footer-navs">
+      <div class="col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#privacy">Privacy policy</a></li>
+          <li><a href="#terms">Terms of service</a></li>
+          <li><a href="#404">404 Page</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Socials</h5>
+        <ul class="socials-list">
+          <li><a href="#" aria-label="X / Twitter">X (twitter)</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer bottom -->
+  <div class="footer-bottom container">
+    <div class="footer-left">
+      <small>© <span id="footer-year"></span> Shoaib Mirjat. Designed by Shoaib.</small>
+    </div>
+    <div class="footer-right">
+      <small class="muted">Built in Framer</small>
+    </div>
+  </div>
+</footer>
+
+<!-- small helper to set year (add after script.js or inline) -->
+<script>
+  (function(){ const el = document.getElementById('footer-year'); if(el) el.textContent = new Date().getFullYear(); })();
+</script>
